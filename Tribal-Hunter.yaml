@@ -1,0 +1,45 @@
+# Give this player a unique slot name. Enter the same name in the game.
+name: TribalHunter
+game: Tribal Hunter Base Development
+description: Tribal Hunter AP playtest with reviewed room logic
+
+Tribal Hunter Base Development:
+  accessibility: full
+  progression_balancing: 50
+
+  # Choose one or more: true_final_boss, lord_dread, maximum_capacity.
+  # Maximum capacity means unlocking 1700 capacity.
+  goals: [true_final_boss]
+  goal_requirement: all  # all or any
+  starting_statue: village  # village, pl4, or random
+  logic: standard
+
+  # Main unlocks, boss chests, finite shops and Kitora rewards are always checks.
+  # Turning a pool off restores its native behavior.
+  mushroom_shuffle: true
+  chest_shuffle: true
+  flight_statue_shuffle: true
+  ability_shuffle: true
+  fox_training_unlocks: shuffled  # shuffled or vanilla_bosses
+
+  # XP prices for the ability shop. Key's finite coin prices are fixed separately.
+  upgrade_price_mode: fixed_base  # fixed_base or vanilla_scaling
+  upgrade_cost_multiplier: 100  # 0–500 percent
+  # Unlocked flights are always free.
+
+  # Gate shortcut flights into Ancient Path. Walking routes are unchanged.
+  ancient_path_gate: path11  # none, path1, path11, or both
+  gate_requirements: [destinations]
+  # Available conditions: destinations, visited_statues, bosses, popshrooms, oversize.
+  gate_requirement_mode: all  # all or any of the selected conditions
+  gate_destinations: 5
+  gate_visited_statues: 5
+  gate_bosses: 5
+  gate_popshrooms: 50
+
+  # Percent of eligible coin filler replaced by the selected traps.
+  trap_percentage: 10  # 0–100
+  trap_pool: [ghost, slime, empty_stomach, indigestion]
+  death_link: false
+  enemy_xp_multiplier: 100
+  enemy_money_multiplier: 100
