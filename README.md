@@ -1,5 +1,26 @@
-# Tribal Hunter Archipelago setup
+# Tribal Hunter Archipelago Randomizer
+An Archipelago integration for Tribal Hunter. Explore the island, send items to other players as you complete checks, and receive the abilities and upgrades you need to finish your own run. You can play solo or join a multiworld with other games.
 
+This is the 0.1 public playtest, using AP world v0.8.0. The default settings include 539 checks. The room logic was reviewed by hand, and reports of missed requirements or inaccessible checks are welcome.
+
+## What is randomized?
+- Movement abilities, key items, size unlocks, and special powers
+- Popshrooms, treasure chests, boss chests, and flight statue rewards
+- Ability menu purchases, fox training rewards, and finite shop stock
+- Kitora course completion rewards and artist encounters
+The player YAML lets you choose which optional check pools to shuffle. You can also configure the starting statue, Ancient Path flight gates, upgrade prices, enemy rewards, traps, and DeathLink.
+
+## Goals
+Choose one or more goals when generating your seed.
+- Defeat the true final boss.
+- Defeat Lord Dread in the finale.
+- Unlock 1,700 maximum fullness capacity.
+If you select multiple goals, you can require all of them or let any one finish the run.
+
+### Playing the randomizer
+The mod supports Steam build 15863961 and GOG 1.0.2.4. Choose the patch for your edition and install it with TH Mod Manager or Delta Patcher.
+
+# Tribal Hunter Archipelago setup
 Use the patch for your Windows edition of Tribal Hunter, either **GOG 1.0.2.4** or **Steam build 15863961**. The package was tested with Archipelago **0.6.7**. The game name shown in Archipelago is **Tribal Hunter Base Development**.
 
 ## Install the mod
